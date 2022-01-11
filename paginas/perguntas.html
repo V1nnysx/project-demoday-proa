@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Barbara, Fernanda, Italo, Juliane, Lucas, Manzano, Vinicius.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilo/reset.css">
+    <link rel="stylesheet" href="../estilo/perguntas.css">
+    <link rel="stylesheet" href="../estilo/reponsividade.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>PERGUNTAS</title>
+</head>
+
+<body>
+    <header class="cabecalho-home">
+        <ul class="menu-navegacao">
+            <!-- LOGO -->
+            <li class="logo-cabecalho"><a href="../index.html"><img class="logo-cabecalho--img" src="../imagem/logo.png" alt="Imagem de representação do logotipo da empresa Distrito A - Z. Nela possuem quatro formas geométicas circulares, sedo duas acima e duas abaixo. Cada uma delas possui uma cor, sendo elas amarelo, laranja, azul claro e azul escuro. Abaixo das formas está o nome da plataforma escrito na cor preta."></a>
+            </li>
+
+            <!-- TITULOS NAV -->
+            <li class="menu-navegacao--titulos"><a href="../index.html" id="home">Início</a></li>
+            <li class="menu-navegacao--titulos drop"><a href="comercios.html">Empreendimentos</a>
+                <ul class="drop-empreendimentos">
+                    <li><a href="./comercios.html#alimentacao">Alimentação</a></li>
+                    <li><a href="./paginas/comercios.html#farmacia">Farmácias</a></li>
+                    <li><a href="./paginas/comercios.html#mercado">Mercado</a></li>
+                    <li><a href="./comercios.html">Outras</a></li>
+                </ul>
+            </li>
+            <li class="menu-navegacao--titulos"><a href="../paginas/sobre-nos.html">Sobre nós</a></li>
+            <li class="menu-navegacao--titulos"><a href="./artigos.html">Artigos</a></li>
+            <li class="menu-navegacao--titulos"><a href="./contatos.html">Contatos</a></li>
+
+            <!-- LOGO ACESSIBILIDADE -->
+            <li class="logo-acessibilidade drop"><a href=""><img class="logo-cabecalho--acessibilidade"
+                        src="../imagem/A-Acessibilidade-ONU-550.png"
+                        alt="Imagem circular que representa a acessibilidade de forma geral disponibilizado pelo ONU em 2021. Nele temos um boneco de 'palitos' na cor preta, cujas cabeça, mãos e pés são bolinhas azuis, contornados por um circulo maior de linha preta."></a>
+                <ul class="drop-acessibilidade">
+                    <li><a href="">+ A</a></li>
+                    <li><a href="">- A</a></li>
+                    <li><a href="">Contraste</a></li>
+                </ul>
+            </li>
+
+            <!-- AREA DE USUÁRIO -->
+            <li class="logo-usuario"><img class="logo-cabecalho--usuario" src="../imagem/favicon-32x32.png"
+                alt="icone com a silhueta de uma pessoa na cor azul, com cabeça e ombros. Simbolizando a área de cadastro ou acesso de usuários."></li>
+            <li class="menu-navegacao--login"><a href="../paginas/login.html">Entrar</a></li>
+            <li class="menu-navegacao--ou">ou</li>
+            <li class="menu-navegacao--cadastro"><a href="../paginas/cadastros.html">Cadastre-se</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h2 id="perguntas">perguntas frequentes</h2>
+        <section class="perguntas-frequentes">
+            <h2 onclick="aparecer1()">Como posso entrar em contato com comércio sem utilizar as mídias sociais?</h2>
+            <p id="p1">Nossa plataforma dispõe de um chat para que possa entrar em contato com a empresa sem a utilização das mídias sociais (Whatsapp, Instagram, Telegram etc.) da empresa.</p>
+
+            <h2 onclick="aparecer2()">Não tenho inscrição estadual e ou CNPJ, como posso cadastrar meu comércio?</h2>
+            <p id="p2">Neste caso, poderá entrar em contato direto com algum de nossos colaboradores para vermos uma melhor forma do seu ingresso em nossa plataforma de serviços. Mas, recomendamos acima de tudo, que efetue a regularização de sua microempresa ou pequeno comércio de forma a cumprirmos sempre as leis estaduais. </p>
+
+            <h2 onclick="aparecer3()">Onde posso encontrar os estabelecimentos que busquei recentemente?</h2>
+            <p id="p3">No momento em que efetuar seu cadastro ou ingressar com sua conta à plataforma, em sua aba de perfil estará disposto seus “últimos interesses”, referentes aos estabelecimentos que buscou recentemente dentro do site. </p>
+
+            <h2 onclick="aparecer4()">A plataforma serve apenas para buscas em meu bairro ou em outros bairros também?</h2>
+            <p id="p4">A plataforma Distrito A-Z funciona de forma dinâmica e estável, poderá efetuar buscas tanto utilizando endereços/localização em seu bairro ou em demais localidades, como também poderá buscar segmentos ou lojas específicas cadastradas. Este tipo de recurso você encontra na aba principal do site ou na página de “empreendimentos”.</p>
+
+            <h2 onclick="aparecer5()">Para que servem os símbolos de +A, -A e Contraste dispostos na página principal?</h2>
+            <p id="p5">Estes são atalhos destinados a pessoas que possuem alguma necessidade visual, seja ela referente a Fotofobia, sensibilidade, baixa visão etc. Os comandos podem ser acionados assim que desejarem e isso fará o site se adequar à sua vontade, sendo assim, o site para todos se sentirem confortáveis em utilizar.</p>
+
+            <h2 onclick="aparecer6()">Preciso necessariamente me cadastrar para usar o site?</h2>
+            <p id="p6">Não, não é obrigatório que efetue o cadastramento de suas informações. Existem muitas funções do site que você poderá utilizar sem se cadastrar. Porém, existem outras que somente com o cadastro terá acesso, como avaliações, comentários, salvar informações, comércios que lhe interessar etc.</p>
+
+            <!-- AREA DE AVALIAÇÃO -->
+            <h3 class="infos-uteis">Essas informações foram úteis?</h3>
+            <div class="avaliacao">
+                <span id="like" alt="Opção de 'gostei'."><a href="#"><i class="fas fa-thumbs-up"></i></a></span>
+                <span id="dislike" alt="Opção de 'não gostei'."><a href="#"><i class="fas fa-thumbs-down"></i></a></span>
+            </div>
+            <br>
+        </section>
+    </main>
+
+    <!-- AREA DO MODAL DE TERMOS -->
+
+    <!-- MODAL -->
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+
+        <!-- CONTEÚDO DO MODAL -->
+        <div class="popup-termos--servicos animate">
+            <h2>Termos de Serviço</h2>
+            <div class="conteudo-termos--servicos">
+                <h3>Condições de uso</h3>
+                <p><strong>Ao utilizar a plataforma da DISTRITO A-Z, você concorda com estas condições. Por favor, leia tudo cuidadosamente. Caso não concorde com estas condições, não utilize os serviços ofertados.</strong></p>
+                <p>Oferecemos uma grande oportunidade de visibilidade à comércios para que seus clientes possam os encontrar, termos adicionais podem ser aplicáveis. Ao utilizar um determinado serviço da plataforma, você também estará sujeito às diretrizes, termos e condições a ele aplicáveis ("Termos do Serviço"). Em caso de inconsistência, entre em contato conosco.
+                </p> <br>
+                <h3>Comunicações Eletrônicas</h3>
+                <p>Ao utilizar qualquer dos Serviços ofertados pela plataforma, ou ao nos enviar e-mails, mensagens de texto (SMS), ou outros tipos de comunicação a partir de qualquer aparelho eletrônico, você se comunicará eletronicamente conosco. Você nos autoriza a enviar-lhe comunicações eletrônicas por vários meios, tais quais e-mail, mensagens de texto (SMS), mensagens “push” em aplicativos, ou ao postar informações neste website, tal qual o nosso Centro de Mensagens. Você concorda que quaisquer contratos, notificações, mensagens, divulgações e demais comunicações entregues a você eletronicamente satisfazem todas as exigências legais de que tal comunicação seja feita por escrito.
+                </p> <br>
+                <h3>Direito Autoral</h3>
+                <p>Todo conteúdo incluído em ou disponibilizado por qualquer dos serviços (como textos, gráficos, logotipos, ícones, imagens, downloads digitais e compilações de dados) é de propriedade da Distrito A-Z ou de seu fornecedor de conteúdo e é protegido por normas locais. A compilação de todo conteúdo incluído ou disponibilizado por meio de qualquer serviço é de propriedade exclusiva da Distrito A-Z e protegida por normas locais.
+                </p> <br>
+                <h3>Autorização e Acesso</h3>
+                <p>Sujeito ao cumprimento destas Condições de Uso a Distrito A-Z ou seus fornecedores de conteúdo concedem a você uma autorização (limitada, não exclusiva, não transferível, não sublicenciável), para acessar e fazer uso pessoal (para fins não comerciais) de nossos serviços. Esta autorização não abrange (i) a revenda ou uso comercial de qualquer Serviço ou de seu conteúdo, (b) a obtenção ou uso de quaisquer listas de produtos, descrições ou preços, (c) qualquer uso derivado de qualquer serviço ou de seu conteúdo; (d) qualquer download ou cópia de informações de contas em benefício de outro comerciante; (e) qualquer coleta de dados, robôs ou quaisquer outras ferramentas de extração de dados. Todos os direitos não expressamente concedidos a você nestas Condições de Uso ou em quaisquer Termos de Serviço são reservados e retidos pela Distrito A-Z ou pelos respectivos licenciadores, fornecedores, detentores de direitos ou outros fornecedores de conteúdo. Nenhum conteúdo poderá ser reproduzido, duplicado, copiado, vendido, revendido, visitado ou de outro modo explorado para qualquer finalidade comercial sem o consentimento expresso e escrito da Distrito A-Z. Você não poderá utilizar “framing” ou outras técnicas “framing” incorporando qualquer marca registrada, logotipo ou outra informação exclusiva (inclusive imagens, textos, layout de página ou formulário) da Distrito A-Z sem o consentimento expresso e escrito desta. Você não poderá utilizar quaisquer “meta tags” ou qualquer outro "texto oculto" utilizando o nome ou marcas registradas da Distrito A-Z sem o consentimento expresso e escrito da Distrito A-Z. Você não poderá utilizar os recursos de forma inapropriada. Você poderá utilizar os Serviços Distrito A-Z somente na extensão permitida por lei. As licenças ou autorizações concedidas pela Distrito A-Z serão revogadas em caso de descumprimento destas Condições de Uso ou de quaisquer Termos de Serviço ou Privacidade.</p> <br>
+                <h3>Termos de Software Distrito A-Z</h3>
+                <p>Além destas Condições de Uso, os termos encontrados abaixo e acima se aplicam a qualquer software (inclusive quaisquer atualizações ou upgrades do software e qualquer documentação correlata) que disponibilizamos a você de tempos em tempos para seu uso em relação a quaisquer recursos.</p> <br>
+                <h3>Outros negócios</h3>
+                <p>Fornecemos links para os sites de outras empresas (relacionadas ou não à Distrito A-Z). Não somos responsáveis por examinar ou avaliar e não garantimos as “ofertas” de quaisquer dessas empresas, ou o conteúdo de seus sites. A Distrito A-Z não assume qualquer responsabilidade pelas ações, produtos e conteúdo desses e de quaisquer terceiros. Você deve analisar cuidadosamente as políticas de privacidade e demais Condições de Uso destes terceiros.
+                </p> <br>
+                <h3>Políticas, Modificação E Independência Das Disposições Do Site</h3>
+                <p>Favor analisar nossas demais políticas. Essas políticas também regem seu uso dos serviços Distrito A-Z. Reservamo-nos o direito de fazer mudanças em nosso site, nas políticas, Termos de Serviço e nestas Condições de Uso a qualquer momento. Se você não concordar com as mudanças, você não deverá acessar ou utilizar os recursos da Distrito A-Z ofertados por meio deste mesmo site. Se qualquer dessas condições for considerada inválida, nula ou por qualquer motivo inexequível, essa condição será considerada uma cláusula separada e independente e não afetará a validade e exequibilidade de qualquer condição remanescente.</p> <br>
+                <h3>Nosso endereço de contato</h3>
+                <p>E-mail: contato.districtaz@gmail.com <br>
+                LinkedIn: https://www.linkedin.com/company/district-a-z/?viewAsMember=true
+                </p>
+            </div>
+            <div class="aviso-termos--servico">
+                <p>Para consultas gerais, entre em contato conosco on-line. Para avisos legais ou serviços referentes ao processo, escreva para os endereços listados no rodapé da plataforma ou utilize a aba de contatos.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- AREA DO MODAL DE PRIVACIDADE -->
+
+    <!-- MODAL -->
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+
+        <!-- CONTEÚDO DO MODAL -->
+        <div class="popup-termos--privacidade animate">
+            <h2>Termos de Privacidade</h2>
+            <div class="conteudo-termos--privacidade">
+                <h3>Privacidade</h3>
+                <p>Para entender os nossos padrões relativos à privacidade, por favor, examine a Notificação de Privacidade, que também rege a utilização dos Termos de Uso.</p> <br>
+                <h3>Avaliações, Comentários, Comunicações E Outro Conteúdo</h3>
+                <p>Visitantes poderão postar avaliações, comentários, fotos e outros conteúdos, enviar comunicações e enviar sugestões, ideias, comentários, perguntas ou outras informações, desde que o conteúdo não seja ilegal, obsceno, ameaçador, difamatório, invada a privacidade, infrinja direitos autorais ou de propriedade intelectual ou que de outro modo seja prejudicial a terceiros ou passível de questionamentos, e desde que não consista em ou contenha vírus de software, campanhas políticas, solicitações comerciais, correntes, correio em massa ou qualquer outra forma de "spam". Você não poderá utilizar um endereço de e-mail falso, fingir ser outra pessoa física ou jurídica ou de qualquer outro modo prestar informações falsas sobre a origem de conteúdo. A Distrito A-Z reserva-se o direito (mas não a obrigação) de remover ou editar esse conteúdo, mas não analisa regularmente o conteúdo postado. <br> Ao postar conteúdo ou enviar materiais e, a menos que indiquemos de outro modo, você concede à Distrito A-Z um direito não exclusivo, gratuito, perpétuo (por exemplo, por todo o tempo de proteção legal), irrevogável e totalmente sublicenciável para utilizar, reproduzir, modificar, adaptar, publicar, traduzir, criar trabalhos derivados, distribuir e exibir esse conteúdo em todos os canais, em qualquer meio (incluindo, mas não se limitando a, páginas exibidas na rede de computadores ou redes similares, acessíveis por computadores, telefones celulares, tablets, leitores de livros eletrônicos e outros dispositivos eletrônicos). Você concede à Distrito A-Z e a eventuais sublicenciados o direito de utilizar o nome que você informou em relação a esse conteúdo, caso a Distrito A-Z ou sublicenciados assim decidam fazê-lo. Você declara e garante que (i) detém ou de outro modo controla todos os direitos relativos ao conteúdo que você postar, (ii) que o conteúdo é exato, (iii) que o uso do conteúdo que você disponibilizar não viola esta política e não causará danos a qualquer pessoa física ou jurídica e (iv) que você indenizará à Distrito A-Z por perdas, danos e despesas relativas a ou decorrentes de demandas oriundas de conteúdo que você fornecer. A Distrito A-Z tem o direito, mas não a obrigação, de monitorar e editar ou remover qualquer atividade ou conteúdo. A Distrito A-Z não assume responsabilidade quanto a qualquer conteúdo postado por você ou por terceiros.</p> <br>
+                <h3>Reclamações relativas a direitos autorais</h3>
+                <p>A Distrito A-Z respeita a propriedade intelectual de terceiros. Se você acredita que seu trabalho foi copiado de qualquer forma que constitua uma violação de direitos autorais, favor seguir nossa notificação e procedimento para formular reclamações de violações de direitos autorais que pode ser encontrada na plataforma.</p> <br>
+                <h3>Quais informações pessoais sobre clientes a distrito a-z coleta?</h3>
+                <p>Coletamos suas informações pessoais para prestar e continuamente melhorar nossos recursos. <br>
+                Esses são os tipos de informações pessoais que coletamos: <br>
+                <strong>• Informações que você nos fornece:</strong> Recebemos e armazenamos as informações que você nos fornece em relação à Distrito A-Z. Clique aqui para ver exemplos de informações que coletamos. Você pode optar por não fornecer certas informações, mas, neste caso, pode não conseguir se beneficiar de muitos de nossos serviços. <br>    
+                <strong>• Informações automáticas:</strong> Coletamos e armazenamos automaticamente alguns tipos de informações sobre o seu uso, incluindo sua interação com o conteúdo e os serviços disponibilizados pela plataforma. Assim como muitos web sites, usamos cookies e outros identificadores únicos e coletamos certos tipos de informações quando o seu navegador ou dispositivo acessa o site e outros conteúdos fornecidos por ou em nome da Distrito A-Z em outros web sites.</p> <br>
+                <h3>Para quais finalidades a distrito a-z trata suas informações pessoais?</h3>
+                <p><strong>Tratamos suas informações pessoais para operar, prestar, desenvolver e melhorar serviços que oferecemos a nossos clientes. Essas finalidades incluem:</strong></p> <br>
+                <p><strong>Recomendações e personalização.</strong> Usamos suas informações pessoais para recomendar funcionalidades/recursos, produtos e serviços que podem ser de seu interesse, identificar suas preferências, e personalizar sua experiência.</p>
+                <p><strong>Serviços de imagem e câmera.</strong> Quando você usa nossos serviços de imagem ou câmera, processamos os dados de sua imagem e outras informações pessoais para responder às suas dúvidas, prestar os serviços solicitados para você e melhorar nossos serviços.</p>
+                <p><strong>Cumprimento de obrigações legais.</strong> Em alguns casos, coletamos e usamos suas informações pessoais para cumprir com leis. Por exemplo, coletamos de vendedores informações sobre o local do estabelecimento e as informações de cadastro estadual para verificação de identidade e outros fins.</p>
+                <p><strong>Comunicação com você.</strong> Usamos suas informações pessoais para nos comunicarmos com você com relação aos serviços oferecidos ou quaisquer dúvidas por diferentes canais (por exemplo, telefone, e-mail, chat).</p>
+                <p><strong>Publicidade.</strong> Usamos suas informações pessoais para exibir anúncios baseados em interesses sobre recursos, produtos e serviços que possam ser do seu interesse. Nós não usamos informações que identificam você diretamente para mostrar anúncios baseados em interesse. </p>
+                <p><strong>Prevenção de fraude e riscos de crédito.</strong> Tratamos informações pessoais para impedir e detectar fraude e abuso a fim de proteger a segurança de nossos clientes, da Distrito A-Z e de terceiros. Também podemos usar métodos de score/avaliação para avaliar e administrar os riscos de crédito.</p>
+                <p><strong>Finalidades para as quais pedimos seu consentimento.</strong> Também podemos pedir o seu consentimento para tratar suas informações pessoais para uma finalidade específica que comunicarmos a você. Quando você concorda com o tratamento de suas informações pessoais para uma finalidade específica, você pode revogar o seu consentimento a qualquer momento e nós pararemos de tratar seus dados para essa finalidade específica.</p> <br>
+                <h3>Quão seguras são as informações sobre mim?</h3>
+                <p>Desenvolvemos nossos sistemas sempre pensando em sua segurança e privacidade.</p>
+                <p>• Trabalhamos para proteger a segurança de suas informações pessoais durante a transmissão usando protocolos. <br>
+                • Mantemos proteções físicas, eletrônicas e procedimentais relativas à coleta, armazenamento e fornecimento de informações pessoais de clientes. Nossos procedimentos de segurança implicam que podemos ocasionalmente solicitar comprovação da identidade antes de divulgarmos informações pessoais a você. <br>
+                • Nossos dispositivos contam com recursos de segurança de proteção contra acesso não autorizado e perda de dados. <br>
+                • É importante que você se proteja contra acessos não autorizados à sua senha e aos seus computadores, dispositivos e aplicativos. Certifique-se de encerrar a sessão sempre que terminar de usar um computador compartilhado.</p> <br>
+                <h3>Quais informações posso acessar?</h3>
+                <p>Você pode acessar suas informações, incluindo seu nome, endereço, informações do perfil, configurações e histórico de visitações na seção "perfil" do web site.</p> <br>
+                <h3>Contatos, Notificações E Revisões</h3>
+                <p>Caso você tenha alguma dúvida sobre privacidade na Distrito A-Z ou queira falar com um dos nossos controladores de dados, entre em contato conoso descrevendo sua dúvida que tentaremos saná-la. O encarregado de proteção de dados dos controladores de dados referidos acima pode ser contatado pelo e-mail contato.districtaz@gmail.com. Você também pode fazer uma reclamação para a Autoridade Nacional de Proteção de Dados brasileira por meio dos seus canais oficiais.
+                Nossos negócios mudam constantemente e nossa Notificação de Privacidade também mudará. Você deve consultar nossos web sites frequentemente para consultar as alterações recentes. A menos que previsto de outro modo, nosso Termo de Privacidade atual se aplica a todas as informações que temos sobre você e sua conta. Nós honramos as promessas que fazemos, e nunca mudaremos de forma substancial nossas políticas e práticas de modo que elas protejam menos as informações dos clientes coletadas no passado sem o consentimento dos clientes afetados.</p>
+            </div>
+            <div class="aviso-termos--privacidade">
+                <p>Para consultas gerais, entre em contato conosco on-line. Para avisos legais ou serviços referentes ao processo, escreva para os endereços listados no rodapé da plataforma ou utilize a aba de contatos.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ONDA PARA O RODAPÉ -->
+    <div>
+        <img class="img-onda--footer" src="../imagem/onda2.png" alt="imagem de uma onda branca para dividir a tela.">
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer id="rodape">
+        <div class="rodape-1">
+            <div class="div-footer container-footer--1">
+                <ul>
+                    <li><a onclick="document.getElementById('id01').style.display='block'">Termos de serviço</a></li>
+                    <li><a onclick="document.getElementById('id02').style.display='block'">Privacidade</a></li>
+                    <li><a href="/paginas/perguntas.html">Perguntas frequentes</a></li>
+                </ul>
+            </div>
+            <div class="div-footer container-footer--2">
+                <ul>
+                    <li>
+                    <a href="https://www.facebook.com/profile.php?id=100073738065582" target="blank" alt="ícone do Facebook"><i class="fab fa-facebook fa-md"></i></a>
+                    <a href="https://www.instagram.com/distritoaz/" target="blank" alt="ícone do instagram"> <i class="fab fa-instagram-square"></i></a>
+                    <a href="https://www.linkedin.com/in/distrito-a-z/" target="blank" alt="ícone do LinkedIn"> <i class="fab fa-linkedin fa-md"></i></a>
+                    </li>
+                    <li>Siga-nos em nossas redes</li>
+                </ul>
+            </div>
+            <div class="div-footer container-footer--3">
+                <ul>
+                    <li>
+                        <a href="" target="blank" alt="ícone do Whatsapp"><i class="fab fa-whatsapp-square" target="blank"></i></a>
+                        <a href="" target="blank" alt="Ícone do Telegram"><i class="fab fa-telegram"></i></a>
+                    </li>
+                    <li>Fale Conosco via<br>
+                    <a href="mailto:contato.districtaz@gmail.com">E-mail</a>, <a href="">WhatsApp</a>, <a href="">Telegram</a><br>
+                    ou <a href="">chat</a>.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="direitos-autorais"> &copy Direitos reservados à Distrito A - Z </p>
+    </footer>
+    <script src="../script/perguntas.js"></script>
+    <script src="https://kit.fontawesome.com/2d67e35c13.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

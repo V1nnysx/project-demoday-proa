@@ -1,0 +1,620 @@
+body {
+    background-color: #79ade4;
+}
+header {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+a {
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+
+/* HEADER */
+.cabecalho-home{
+    display: flex;
+    list-style: none;
+    padding: auto;
+    justify-content: center;
+}
+.menu-navegacao {
+    display: flex;
+    align-items: center;
+}
+.logo-cabecalho--img{
+    padding-top: 15px;
+    width: 110px;
+}
+.menu-navegacao--titulos {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.menu-navegacao--titulos .teste {
+    position: relative;
+    display: inline-block;
+}
+.menu-navegacao--titulos a:hover,
+.menu-navegacao--login a:hover,
+.menu-navegacao--cadastro a:hover {
+    color: #035397;
+}
+.logo-acessibilidade {
+    margin: auto 40px;
+}
+.logo-cabecalho--acessibilidade{
+    width: 110px;
+}
+.logo-usuario {
+    padding-right: 10px;
+}
+.menu-navegacao--login, .menu-navegacao--cadastro {
+    display: block;
+    font-weight: bold;
+}
+.menu-navegacao--ou {
+    font-size: 15px;
+    padding: 7px;
+}
+
+/* DROPDOWN EMPREENDIMENTOS */
+.drop-empreendimentos {
+    background-color: #035297f5;
+    position: absolute;
+    padding: 15px;
+    top: 63px;
+    z-index: 1;
+    border-radius: 20px;
+    display: none;
+}
+.drop-empreendimentos li {
+    text-align: center;
+    line-height: 30px;
+}
+.drop-empreendimentos li a {
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.drop-empreendimentos li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.drop:hover .drop-empreendimentos{
+    display: block;
+}
+
+/* DROPDOWN DE ACESSIBILIDADE */
+.drop-acessibilidade {
+    background-color: #035297f5;
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    padding: 15px 10px;
+    top: 95px;
+    z-index: 2;
+    border-radius: 20px;
+    display: none;
+}
+.drop-acessibilidade li {
+    text-align: center;
+    line-height: 30px;
+}
+.drop-acessibilidade li a {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.drop-acessibilidade li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.drop:hover .drop-acessibilidade{
+    display: block;
+}
+
+/* MAIN */
+main {
+    height: auto;
+}
+.titulo-pagina {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    text-shadow: 0px 3px 10px #ffffff;
+}
+.area-formulario {
+    margin: 50px auto 30px auto;
+    width: 70%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.829);
+}
+
+/* CONTEÚDO DE CONTATOS */
+.area-form {
+    padding-top: 60px;
+    width: 80%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+.titulo-cad--1 {
+    margin: 30px auto 50px auto;
+    font-size: 40px;
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.637);
+}
+.area-form {
+    text-align: center;
+}
+.p-nome, .p-email {
+    text-align: center;
+}
+.lista-form--envio p {
+    font-size: 18px;
+    font-weight: bolder;
+}
+.lista-form--envio input {
+    background-color: #CCC;
+    border: 2px solid #035397;
+    height: 30px;
+    padding: 2px 10px;
+    margin: 10px 0 30px 0;
+    font-size: 15px;
+}
+.lista-form--envio input:focus {
+    background-color: rgb(228, 227, 227);
+    outline: 0;
+}
+.area-form li .p-email,
+.area-form li .p-nome,
+.area-form li .p-assunt,
+.area-form li .p-desc {
+    margin-left: 36px;
+    float: left;
+}
+.area-form li .p-tel {
+    margin-left: 268px;
+    float: left;
+}
+.area-form li .p-end {
+    margin-left: 210px;
+    float: left;
+} 
+.lista-form--envio .p-tel {
+    margin-left: 420px;
+}
+.i-nome {
+    width: 88%;
+}
+.i-email {
+    width: 53%;
+}
+.i-tel {
+    width: 31%;
+}
+.i-assunt {
+    width: 88%;
+}
+.opcoes-assunto {
+    width: 92%;
+    align-items: center;
+    background-color: #CCC;
+    border: 2px solid #035397;
+    height: 40px;
+    padding: 2px 10px;
+    margin: 10px 0 30px 0;
+    font-size: 15px;
+}
+.opcoes-assunto:focus {
+    border: 2px solid #035397;
+}
+#desc {
+    font-family: 'Lato', sans-serif;
+    background-color: #CCC;
+    border: 2px solid #035397;
+    height: auto;
+    padding: 10px 10px ;
+    margin: 10px 0 30px 0;
+    font-size: 15px;
+    line-height: 23px;
+}
+.i-desc {
+    min-width: 89%;
+    max-width: 89%;
+}
+
+/* BOTÃO PARA ENVIAR */
+.botao-envio--form {
+    margin: 10px 41%;
+    border: none;
+    background-color: #ffaa4c;
+    padding: 10px 21px;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
+}
+.botao-envio--form:hover {
+    box-shadow: 0px 0px 10px #f39d3b;
+}
+.img-contatos {
+    width: 50%;
+    margin-left: 220px;
+}
+
+/* ÁREA DO MODAL DE TERMOS */
+/* BACKGROUND MODAL */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 50px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; 
+    border: 1px solid #888;
+    width: 80%; 
+}
+  
+/* BOTÃO DE FECHAR */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+  
+/* ANIMAÇÃO DE ZOOM */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* TABELA DE TERMOS */
+.popup-termos--servicos {
+    font-family: 'Lato', sans-serif;
+    height: 420px;
+    background-color: white;
+    border: 8px solid #001e6c;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+}
+.popup-termos--servicos h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+.conteudo-termos--servicos {
+    height: 288px;
+    width: 90%;
+    margin: 20px auto;
+    overflow-y: scroll;
+    line-height: 23px;
+    padding: 5px 0;
+}
+.conteudo-termos--servicos p {
+    width: 99%;
+    font-size: 14px;
+}
+.conteudo-termos--servicos h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+strong {
+    font-weight: 700;
+}
+.aviso-termos--servico {
+    color: white;
+    background-color: #031b57;
+    padding: 8px 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+
+/* EDIÇÃO DA BARRA DE ROLAGEM INTERNA */
+/* largura */
+.conteudo-termos--servicos::-webkit-scrollbar {
+    width: 13px;
+}
+/* barra */
+.conteudo-termos--servicos::-webkit-scrollbar-track {
+    background: #e4e3e3; 
+}
+/* movimento */
+.conteudo-termos--servicos::-webkit-scrollbar-thumb {
+    background: #001e6c; 
+}
+
+/* ÁREA DO MODAL DE PRIVACIDADE */
+/* BACKGROUND MODAL */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 50px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto;
+    border: 1px solid #888;
+    width: 80%; 
+}
+  
+/* BOTÃO DE FECHAR */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+  
+/* ANIMAÇÃO DE ZOOM */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* TABELA DE TERMOS */
+.popup-termos--privacidade {
+    font-family: 'Lato', sans-serif;
+    height: 420px;
+    background-color: white;
+    border: 8px solid #001e6c;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+}
+.popup-termos--privacidade h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+.conteudo-termos--privacidade {
+    height: 288px;
+    width: 90%;
+    margin: 20px auto;
+    overflow-y: scroll;
+    line-height: 23px;
+    padding: 5px 0;
+}
+.conteudo-termos--privacidade p {
+    width: 99%;
+    font-size: 14px;
+}
+.conteudo-termos--privacidade h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.aviso-termos--privacidade {
+    color: white;
+    background-color: #031b57;
+    padding: 8px 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* EDIÇÃO DA BARRA DE ROLAGEM INTERNA */
+/* largura */
+.conteudo-termos--privacidade::-webkit-scrollbar {
+    width: 13px;
+}
+/* barra */
+.conteudo-termos--privacidade::-webkit-scrollbar-track {
+    background: #e4e3e3; 
+}
+/* movimento */
+.conteudo-termos--privacidade::-webkit-scrollbar-thumb {
+    background: #001e6c; 
+}
+
+/* MODAL DE CONFIRMAÇÃO DE ENVIO DO FORMULÁRIO */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.678); 
+    padding-top: 50px;
+}
+.btnclose {
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+}
+.btnclose:hover,
+.btnclose:focus {
+    color: red;
+    cursor: pointer;
+}
+.agradecimento {
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    height: 120px;
+    background-color: white;
+    width: 50%;
+    margin: 90px auto auto auto;
+    text-align: center;
+    border: 5px solid #001e6c;
+    border-radius: 10px;
+    padding: 15px;
+}
+.fa-check-circle {
+    padding-top: 10px;
+    font-size: 40px;
+    color: #34af23;
+}
+.agradecimento h2 {
+    font-size: 25px;
+}
+.agradecimento p {
+    padding-top: 10px;
+    line-height: 20px;
+}
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* FOOTER */
+.img-onda--footer {
+    width: 100%;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+#rodape {
+    background-color: white;
+    padding-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+}
+.rodape-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+    padding-top: 15px;
+}
+
+/* TERMOS */
+.container-footer--1 ul li a{
+    font-size: 20px;
+    line-height: 28px;
+}
+.container-footer--1 ul li a:hover {
+    font-size: 19.5px;
+    color: #035397;
+    font-weight: 700;
+}
+
+/* REDES SOCIAIS */
+.container-footer--2 {
+    text-align: center;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.container-footer--2 i {
+    padding: 0 7px 4px;
+}
+.fa-facebook {
+    font-size: 40px;
+    color: #4267B2;
+}
+.fa-instagram-square {
+    font-size: 40px;
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.fa-linkedin {
+    font-size: 40px;
+    color: #0e76a8;
+}
+
+/* ÁREA DE ATENDIMENTO */
+.container-footer--3 {
+    text-align: center;
+    line-height: 21px;
+}
+.container-footer--3 i {
+    padding: 0 7px 4px;
+}
+.container-footer--3 a {
+    font-weight: 700;
+}
+.container-footer--3 a:hover {
+    color: #035397;
+}
+.fa-whatsapp-square {
+    font-size: 40px;
+    color: #34af23;
+}
+.fa-telegram {
+    font-size: 40px;
+    color: #0088cc;
+}
+
+/* COPYRTT */
+#rodape .direitos-autorais {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}

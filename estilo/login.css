@@ -1,0 +1,424 @@
+body {
+    background-color: #79ade4;
+}
+header {
+    background-color: white;
+    height: 20px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+a {
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+
+/* HEADER */
+.onda-header {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 0;
+}
+.logo-cabecalho--img {
+    width: 110px;
+    position: absolute;
+    z-index: 1;
+    top: -31px; 
+    left: 10px;
+}
+main {
+    font-family: 'Lato', sans-serif;
+    margin-top: 100px;
+    height: 500px;
+}
+.area-login {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.area-formulario--login {
+    background-color: white;
+    margin-left: 60px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding: 30px 20px 0 20px;
+    border: 5px solid #035397;
+}
+.area-formulario--login h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.sub-titulo--login {
+    font-size: 18px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.input-login {
+    background-color: #CCC;
+    width: 320px;
+    height: 30px;
+    border: none;
+    padding: 3px 15px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.input-login:nth-last-child(1) {
+    margin-bottom: 10px;
+}
+.input-login:focus {
+    box-shadow: 0px 0px 10px #f39d3b;
+    outline: 0;
+}
+.olho {
+    cursor: pointer;
+    left: 450px;
+    position: absolute;
+    width: 35px;
+}
+.esqueceu-senha {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.esqueceu-senha a:hover {
+    font-weight: bolder;
+    color: #001e6c;
+}
+.botao-entrar--login {
+    margin-top: 10px;
+    border: none;
+    background-color: #ffaa4c;
+    padding: 8px 19px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.botao-entrar--login:hover {
+    box-shadow: 0px 0px 10px #f39d3b;
+}
+.fa-instagram-square,
+.fa-linkedin {
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+.redes-sociais--login {
+    font-size: 13px;
+    font-weight: bolder;
+}
+.imagem-login {
+    width: 580px;
+    margin-right: 20px;
+}
+.area-cadastre--se p{
+    text-align: center;
+    line-height: 55px;
+    font-size: 50px;
+}
+.area-cadastre--se p:nth-last-child(1) a{
+    color: #0e2c75;
+}
+
+/* ÁREA DO MODAL DE TERMOS */
+/* BACKGROUND MODAL */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 50px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+  
+/* BOTÃO DE FECHAR */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+  
+/* ANIMAÇÃO DE ZOOM */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)}
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)}
+to {transform: scale(1)}
+}
+
+/* TABELA DE TERMOS */
+.popup-termos--servicos {
+    font-family: 'Lato', sans-serif;
+    height: 420px;
+    background-color: white;
+    border: 8px solid #001e6c;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+}
+.popup-termos--servicos h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+.conteudo-termos--servicos {
+    height: 288px;
+    width: 90%;
+    margin: 20px auto;
+    overflow-y: scroll;
+    line-height: 23px;
+    padding: 5px 0;
+}
+.conteudo-termos--servicos p {
+    width: 99%;
+    font-size: 14px;
+}
+.conteudo-termos--servicos h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+strong {
+    font-weight: 700;
+}
+.aviso-termos--servico {
+    color: white;
+    background-color: #031b57;
+    padding: 8px 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* EDIÇÃO DA BARRA DE ROLAGEM INTERNA */
+/* largura */
+.conteudo-termos--servicos::-webkit-scrollbar {
+    width: 13px;
+}
+/* barra */
+.conteudo-termos--servicos::-webkit-scrollbar-track {
+    background: #e4e3e3; 
+}
+/* movimento */
+.conteudo-termos--servicos::-webkit-scrollbar-thumb {
+    background: #001e6c; 
+}
+
+/* ÁREA DO MODAL DE PRIVACIDADE */
+/* BACKGROUND MODAL */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 50px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+  
+/* BOTÃO DE FECHAR */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+  
+/* ANIMAÇÃO DE ZOOM */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)}
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)}
+to {transform: scale(1)}
+}
+
+/* TABELA DE TERMOS */
+.popup-termos--privacidade {
+    font-family: 'Lato', sans-serif;
+    height: 420px;
+    background-color: white;
+    border: 8px solid #001e6c;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+}
+.popup-termos--privacidade h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+.conteudo-termos--privacidade {
+    height: 288px;
+    width: 90%;
+    margin: 20px auto;
+    overflow-y: scroll;
+    line-height: 23px;
+    padding: 5px 0;
+}
+.conteudo-termos--privacidade p {
+    width: 99%;
+    font-size: 14px;
+}
+.conteudo-termos--privacidade h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.aviso-termos--privacidade {
+    color: white;
+    background-color: #031b57;
+    padding: 8px 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* EDIÇÃO DA BARRA DE ROLAGEM INTERNA */
+/* largura */
+.conteudo-termos--privacidade::-webkit-scrollbar {
+    width: 13px;
+}
+/* barra */
+.conteudo-termos--privacidade::-webkit-scrollbar-track {
+    background: #e4e3e3; 
+}
+/* movimento */
+.conteudo-termos--privacidade::-webkit-scrollbar-thumb {
+    background: #001e6c; 
+}
+
+/* FOOTER */
+.img-onda--footer {
+    width: 100%;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+#rodape {
+    background-color: white;
+    padding-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+}
+.rodape-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+    padding-top: 15px;
+}
+
+/* TERMOS */
+.container-footer--1 ul li a{
+    font-size: 20px;
+    line-height: 28px;
+}
+.container-footer--1 ul li a:hover {
+    font-size: 19.5px;
+    color: #035397;
+    font-weight: 700;
+}
+
+/* REDES SOCIAIS */
+.container-footer--2 {
+    text-align: center;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.container-footer--2 i {
+    padding: 0 7px 4px;
+}
+.fa-facebook {
+    font-size: 40px;
+    color: #4267B2;
+}
+.fa-instagram-square {
+    font-size: 40px;
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.fa-linkedin {
+    font-size: 40px;
+    color: #0e76a8;
+}
+
+/* ÁREA DE ATENDIMENTO */
+.container-footer--3 {
+    text-align: center;
+    line-height: 21px;
+}
+.container-footer--3 i {
+    padding: 0 7px 4px;
+}
+.container-footer--3 a {
+    font-weight: 700;
+}
+.container-footer--3 a:hover {
+    color: #035397;
+}
+.fa-whatsapp-square {
+    font-size: 40px;
+    color: #34af23;
+}
+.fa-telegram {
+    font-size: 40px;
+    color: #0088cc;
+}
+
+/* COPYRTT */
+#rodape .direitos-autorais {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}

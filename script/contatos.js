@@ -1,0 +1,32 @@
+// AREA DO MODAL DE TERMOS
+// BUSCA DE ID
+var modal = document.getElementById('id01');
+
+// Quando o usuário clicar em qualquer lugar fora do modal, feche-o
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// AREA DO MODAL DE PRIVACIDADE
+// BUSCA DE ID
+var modal = document.getElementById('id02');
+
+// Quando o usuário clicar em qualquer lugar fora do modal, feche-o
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// MODAL DE CONFIRMAÇÃO DE ENVIO DO FORMULÁRIO
+// BUSCA DE ID
+var modal = document.getElementById('obrigado');
+
+// Quando o usuário clicar em qualquer lugar fora do modal, feche-o
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
